@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/sosCall"
+        android:title="Hospital"
+        app:showAsAction="always"
+        android:icon="@drawable/soss"
+
+
+        >
+
+    </item>
+
+    <item
+        android:id="@+id/hospitalList"
+        android:title="Hospital"
+        app:showAsAction="always"
+        android:icon="@drawable/hospitalicon"
+
+
+        >
+
+    </item>
+
+    <item
+        android:id="@+id/policeStationList"
+        android:title="Police Station"
+        app:showAsAction="always"
+        android:icon="@drawable/policestation"
+
+        >
+
+    </item>
+    <item
+        android:id="@+id/fireStationList"
+        android:title="Fire Station"
+        app:showAsAction="always"
+        android:icon="@drawable/firestation"
+
+        >
+
+    </item>
+
+
+</menu>

@@ -1,0 +1,27 @@
+RewriteEngine on
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php56” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php56___lsphp .php .php5 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
+
+RewriteCond %{HTTP_REFERER} !^http://login.tikabarta.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://login.tikabarta.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://tikabarta.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://tikabarta.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.login.tikabarta.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.login.tikabarta.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.tikabarta.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.tikabarta.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://login.tikabarta.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://login.tikabarta.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://tikabarta.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://tikabarta.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.login.tikabarta.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.login.tikabarta.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.tikabarta.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.tikabarta.com$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+

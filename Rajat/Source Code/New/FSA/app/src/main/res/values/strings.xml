@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FSA</string>
+    <string name="btnTakePicture">Capture Image</string>
+    <string name="btnRecordVideo">Record Video</string>
+    <string name="or">(or)</string>
+    <string name="btnUploadToServer">Upload to Server</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="firebase_path" translatable="false">tracking-ad9cb</string>
+    <string name="firebase_email" translatable="false">alaminprodhancpi@gmail.com</string>
+    <string name="firebase_password" translatable="false">434944361665</string>
+    <string name="title_activity_nearest_fire_station">Map</string>
+
+</resources>

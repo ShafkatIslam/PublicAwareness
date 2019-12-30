@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="v.fsa.com.startup.fsa">
+
+<uses-feature android:name="android.hardware.camera" />
+
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+<permission android:name="com.google.maps.android.utils.permission.MAPS_RECEIVE"
+    android:protectionLevel="signature" />
+
+<uses-permission android:name="com.google.maps.android.utils.permission.MAPS_RECEIVE" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+<application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name"
+    android:supportsRtl="true" android:theme="@style/AppTheme">
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyClCFw6xVOFLpc0ZH1nyC33-Y60Z2uk9UM" />
+
+    <activity android:name=".UserHome" android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <service android:name="v.fsa.com.firebase.MyFirebaseInstanceIDService">
+        <intent-filter>
+            <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+        </intent-filter>
+    </service>
+    <service android:name="v.fsa.com.firebase.MyFirebaseMessagingService">
+        <intent-filter>
+            <action android:name="com.google.firebase.MESSAGING_EVENT" />
+        </intent-filter>
+    </service>
+
+    <activity android:name=".MapsActivity" />
+    <activity android:name=".UploadActivity" android:screenOrientation="portrait" />
+    <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+
+    <activity android:name="v.fsa.com.share.AndroidMultiPartEntity.MapsExample" />
+    <activity android:name="v.fsa.com.firebase.DataInsertToFirebase" />
+    <activity android:name="v.fsa.com.firebase.FirebaseTest" />
+    <activity android:name="v.fsa.com.user.UserRegistration" />
+    <activity android:name=".LoginActivity"></activity>
+    <activity android:name="v.fsa.com.user.NearestFireStation"
+        android:label="@string/title_activity_nearest_fire_station">
+
+    </activity>
+</application>
+
+
+
+
+</manifest>

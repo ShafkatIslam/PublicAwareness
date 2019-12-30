@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_home_page"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="200dp"
+
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+       >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            >
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:scaleType="fitXY" />
+
+
+           <!-- <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:scaleType="fitXY" />-->
+
+            <TextView
+                android:id="@+id/cardTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thumbnail"
+                android:text="Title"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/album_title"
+                android:textSize="16dp" />
+
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#EDEDED"
+                android:id="@+id/CardHr"
+                android:layout_below="@+id/cardTitle"
+                android:layout_margin="10dp"
+
+                />
+
+
+
+            <TextView
+                android:id="@+id/cardDefault"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CardHr"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                android:textColor="#CCCCCC"
+                android:textSize="14dp" />
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

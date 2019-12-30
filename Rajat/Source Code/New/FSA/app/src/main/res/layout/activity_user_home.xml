@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swip"
+    android:background="#EDEDED"
+    android:fitsSystemWindows="true"
+    >
+
+
+    <android.support.design.widget.CoordinatorLayout
+
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EDEDED"
+
+
+        >
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:background="#fff"
+            android:layout_margin="25dp"
+
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleTextAppearance="@android:color/transparent"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+
+                            >
+
+                            <ImageView
+                                android:id="@+id/thumbnail"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerHorizontal="true"
+                                android:clickable="true"
+                                android:src="@drawable/dash_title"
+                                android:scaleType="fitXY" />
+
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:id="@+id/love_music"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="User Dashboard"
+                                android:fontFamily="sans-serif"
+                                android:textColor="#000"
+                                android:textSize="20dp" />
+
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="2dp"
+                                android:background="#EDEDED"
+                                android:layout_margin="2dp"
+
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/total_req"
+                                android:textColor="#000"
+                                android:textSize="18dp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <include  layout="@layout/content_main_card" />
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</android.support.v4.widget.SwipeRefreshLayout >

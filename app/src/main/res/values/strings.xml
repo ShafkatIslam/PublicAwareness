@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Public Alert</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+    <string name="title_activity_view_map">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_google_map">Map</string>
+    <string name="title_activity_view_maps">Map</string>
+    <string name="title_activity_mapss">Map</string>
+    <string name="title_activity_mapsss">Map</string>
+
+
+    <string-array name="hospital_list_header">
+
+        <item>Chittagong Medical College Hospital</item>
+        <item>University Of Science and Technology Chittagong</item>
+        <item>Chittagong Metropolitan Hospital Pvt. Ltd.</item>
+        <item>National Hospital Pvt. Ltd</item>
+        <item>Chittagong General Hospital</item>
+        <item>Chittagong Diabetic General Hospital</item>
+        <item>Surgiscope Hospital Limited Unit-II</item>
+        <item>CSCR Hospital</item>
+        <item>Popular hospital,Chittagong</item>
+        <item>Royal Hospital (Pvt.) Limited</item>
+        <item>Islami Bank Hospital</item>
+        <item>Chittagong Health Point Hospital</item>
+        <item>Chittagong Medical Centre LTD.</item>
+        <item>Chittagong Mount Hospital (Pvt.) Ltd.</item>
+        <item>Chittagong People Hospital Limited.</item>
+        <item>Chittagong Treatment Hospital pvt. Ltd.</item>
+        <item>Delta Health Care Chittagong Limited</item>
+        <item>Ekushey Hospital Private Ltd</item>
+        <item>Max Hospital and Diagnostic Ltd.</item>
+
+    </string-array>
+
+    <string-array name="firestation_list_header">
+
+        <item>Bangladesh Fire Service and Civil Defense, Agrabad</item>
+        <item>Fire Service and Civil Defence Nandankanon</item>
+        <item>Fire Service and Civil Defence,Anderkilla</item>
+        <item>Fire service and civil defense,Lamar bazer</item>
+        <item>CEPZ Fire Station</item>
+        <item>Fire service and civil defense,Potenga</item>
+        <item>Bandor fire service Station</item>
+
+    </string-array>
+
+    <string-array name="policeStation_list_header">
+
+        <item>Kotwali Police Station</item>
+        <item>Bakalia Police Station</item>
+        <item>Chawkbazar Police Station</item>
+        <item>Panchlaish Model Police Station</item>
+        <item>Sadarghat Police Station</item>
+        <item>Bayazid Bostamy Police Station</item>
+        <item>Khulshi Police Station</item>
+        <item>Doublemooring Police Station</item>
+        <item>Pahartali Police Station</item>
+        <item>Halishahar Police Station</item>
+        <item>Akbar Shah Police Station</item>
+        <item>Bandar Police Station</item>
+        <item>Patenga Police Station</item>
+        <item>New Chandgaon Police Station</item>
+        <item>EPZ Police Station</item>
+
+    </string-array>
+</resources>
