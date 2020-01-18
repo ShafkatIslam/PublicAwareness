@@ -170,6 +170,8 @@ public class SignUp extends AppCompatActivity {
                 loading.setMessage("Please wait...");
                 loading.show();
 
+                HttpsTrustManager.allowAllSSL();
+
 
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, Key.SIGNUP_URL, new Response.Listener<String>() {
                     @Override
